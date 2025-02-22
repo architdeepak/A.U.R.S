@@ -38,12 +38,12 @@ def lawnmower_scan(vehicle, area_length=30, area_width=30, altitude=20, step_siz
     start_lat = vehicle.location.global_relative_frame.lat
     start_lon = vehicle.location.global_relative_frame.lon
     
-    direction = 1  # 1 for right, -1 for left
+    direction = 1  
     for i in range(0, area_width, step_size):
         lat = start_lat + (i * 0.00001)
         lon = start_lon + (direction * area_length * 0.00001)
         move_to(vehicle, lat, lon, altitude)
-        direction *= -1  # Change direction for zig-zag pattern
+        direction *= -1  
     
     print("Area scan complete.")
 

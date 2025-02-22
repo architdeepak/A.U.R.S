@@ -3,7 +3,7 @@ import time
 import math
 
 print("Connecting to vehicle...")
-vehicle = connect('127.0.0.1:14550', wait_ready=True)  #make sure ts match in sitl outputtttttttt 
+vehicle = connect('127.0.0.1:14550', wait_ready=True)           #make sure ts match in sitl outputtttttttt 
 print("Connected to vehicle.")
 def arm_and_takeoff(target_altitude):
     print("Arming motors...")
